@@ -1,7 +1,7 @@
-async function createTables(pg) {
-   await pg.schema.hasTable('user').then(function(exists){
+async function createTables(postgres) {
+   await postgres.schema.hasTable('user').then( async function(exists){
         if (!exists){
-            return pg.createTables('users', function(t){
+            return postgres.schema.createTable('models', function(t){
                 t.increments('id').primary();
                 t.uuid('uuid');
                 t.string('model_name', 100);

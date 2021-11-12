@@ -12,7 +12,7 @@ services:
     ports:
       - 3000:3000
     volumes:
-      - ./api/src:/workdir/src
+      - ./api/src:/usr/api/src
   db:
     container_name: dev_store  
     image: "postgres:latest"
