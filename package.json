@@ -3,5 +3,23 @@
     "jest": "^27.3.1",
     "supertest": "^6.1.6",
     "uuid": "^8.3.2"
-  }
+  },
+  "name": "devv",
+  "description": "Foobar is a Python library for dealing with word pluralization.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manishnepali/DevV.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/manishnepali/DevV/issues"
+  },
+  "homepage": "https://github.com/manishnepali/DevV#readme"
 }
