@@ -1,8 +1,8 @@
 const express = require('express')
 const api = express()
 const cors = require('cors')
-const router = require('./routes/route')
-
+const router = require('./routes/route');
+console.log(process.env.POSTGRES_PASSWORD);
 
 const pg = require('knex')({
     client: 'pg',
@@ -29,7 +29,8 @@ const corsOptions = {
 }
 
 api.use(cors(corsOptions));
-api.use('/', router);
+api.use('/3dModel', router);
+
 
 createTables(pg);
 module.exports = api;
