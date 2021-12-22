@@ -2,7 +2,8 @@ const express = require('express')
 const api = express()
 const cors = require('cors')
 const router = require('./routes/route')
-
+const dotenv = require('dotenv');
+dotenv.config();
 
 const pg = require('knex')({
     client: 'pg',
