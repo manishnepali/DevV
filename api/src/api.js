@@ -31,7 +31,7 @@ const corsOptions = {
 }
 
 api.use(cors(corsOptions));
-api.use('/3dModel', router);
+api.use('/', router);
 
 
 createTables(pg);
