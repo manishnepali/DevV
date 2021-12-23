@@ -1,0 +1,29 @@
+{
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "knex": "^0.95.14",
+    "nodemon": "^2.0.15",
+    "pg": "^8.7.1",
+    "postgres": "^1.0.2"
+  },
+  "name": "devv",
+  "description": "Foobar is a Python library for dealing with word pluralization.",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "nodemon src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manishnepali/DevV.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/manishnepali/DevV/issues"
+  },
+  "homepage": "https://github.com/manishnepali/DevV#readme"
+}
