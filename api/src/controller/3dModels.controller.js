@@ -1,10 +1,23 @@
+const models = require('../models/3dmodels');
+
 /**
  * get all 3dMdoels
  * @param {*} req 
  * @param {*} res 
  */
 exports.all = async(req, res) => {
-    res.status(200).send({ "3dmodel":"ALL" })
+    models
+    .findAll()
+    .then((models)=>{
+        res.status(200).send({
+            count: models.length,
+            models
+        })
+    })
+    .catch((err)=>{
+        res.status(500).send({ err })
+    })
+    
 }
 
 exports.allDes = async(req, res) => {
